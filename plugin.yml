@@ -1,0 +1,24 @@
+name: BDuels
+version: '${project.version}'
+main: dev.beluvu.bduels.Main
+api-version: '1.21'
+authors: [beluvu]
+description: Practice mode - duels, Beast FFA, Nether FFA.
+softdepend: [WorldEdit, FastAsyncWorldEdit]
+commands:
+  bduels:
+    description: Admin command for BDuels.
+    usage: /bduels <create|arena|ffa|delete|list|reload>
+  duels:
+    description: Challenge a player to a duel.
+    usage: /duels <player> kit <kit>
+  ffa:
+    description: Join or leave an FFA mode.
+    usage: /ffa <mode|leave>
+permissions:
+  bduels.admin:
+    default: op
+  bduels.duels:
+    default: true
+  bduels.ffa:
+    default: true

@@ -1,0 +1,40 @@
+duel:
+  invite-timeout: 30        # seconds
+  countdown: ['&e1', '&e2', '&e3']
+  go: '&a&lGO!'
+  end-delay: 3              # seconds the winner stays in the arena
+ffa:
+  protect-blocks: true      # no block break/place/explosion damage in FFA arenas
+  heal-killer: true         # killer gets full HP back
+# Commands players may use while in a duel or FFA (admins with bduels.admin ignore this)
+allowed-commands: [ffa, msg, tell, w, r, reply]
+messages:
+  prefix: '&8[&bBDuels&8] '
+  no-permission: '&cУ тебя нет прав.'
+  players-only: '&cЭто только для игроков.'
+  player-offline: '&cИгрок не найден.'
+  kit-not-found: '&cКит &e{kit}&c не найден.'
+  duel:
+    usage: '&7Использование: &f/duels <ник> kit <кит>'
+    self: '&cНельзя вызвать самого себя.'
+    you-busy: '&cТы сейчас в режиме (дуэль или FFA).'
+    target-busy: '&cИгрок сейчас занят.'
+    sent: '&aВызов отправлен игроку &e{player}&a.'
+    invite: '&e{player}&7 вызывает тебя на дуэль!'
+    no-invite: '&cУ тебя нет такого вызова (или он истёк).'
+    declined: '&e{player}&c отклонил дуэль.'
+    decline-you: '&7Ты отклонил дуэль.'
+    no-arena: '&cСвободных арен нет, попробуй позже.'
+    result: '&a{winner}&7 победил &c{loser}&7 в дуэли!'
+    quit-win: '&a{winner}&7 победил: &c{loser}&7 вышел из дуэли.'
+  ffa:
+    list: '&7Режимы: &f{modes}&7. Выйти: &f/ffa leave'
+    unknown: '&cТакого режима нет.'
+    unavailable: '&cЭтот режим пока не настроен.'
+    joined: '&aТы вошёл в режим &e{mode}&a. Выйти: &f/ffa leave'
+    left: '&7Ты вышел из FFA.'
+    not-in: '&cТы не в FFA.'
+    busy: '&cТы уже в режиме (дуэль или FFA).'
+    kill: '&a{killer}&7 убил &c{victim}'
+    death: '&c{victim}&7 погиб'
+    command-blocked: '&cЭту команду нельзя использовать в режиме.'
